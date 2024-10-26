@@ -47,6 +47,8 @@ If you're using Visual Studio Code:
 3.Your default browser will open automatically to view the website.
 
 
+ video of project running : https://drive.google.com/drive/folders/1-BQckmHrw8seEor6X33ppDk6-tTwFjtX
+
 ### Project Documentation
 For Software:
 
@@ -57,6 +59,9 @@ For Software:
 ![Screenshot 2024-10-26 at 8 53 38 AM](https://github.com/user-attachments/assets/c41a6af2-2349-4807-ac97-67ba5ad232ac)
 
 ![Screenshot 2024-10-26 at 8 54 06 AM](https://github.com/user-attachments/assets/3aca8596-6b08-4151-9b16-711dde4b94a2)
+
+#videos 
+https://drive.google.com/drive/folders/1-BQckmHrw8seEor6X33ppDk6-tTwFjtX
 
 
 
