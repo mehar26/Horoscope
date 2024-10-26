@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comedy Horoscope</title>
-    <link rel="stylesheet" href="styles1.css"> <!-- Make sure this path is correct -->
+    <title>Horoscope</title>
+    <link rel="stylesheet" href="styles1.css"> <!-- Ensure this path is correct -->
 </head>
 <body>
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="vv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
     <div class="container">
-        <h1>Comedy Horoscope</h1>
+        <h1>Horoscope</h1>
         <form id="horoscopeForm">
             <input type="text" id="signInput" placeholder="Enter your zodiac sign..." required>
             <button type="submit">Get Horoscope</button>
@@ -18,6 +24,7 @@
             <p id="horoscopeResult"></p>
         </div>
     </div>
-    <script src="horoscope.js"></script> <!-- Updated to horoscope.js -->
+    
+    <script src="horoscope.js"></script> <!-- Ensure this path is correct -->
 </body>
 </html>

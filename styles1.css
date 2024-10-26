@@ -1,16 +1,56 @@
+/* Video background styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #1e1f26; /* Fallback color */
+    color: #e0e0e0; /* Text color */
+    overflow: hidden; /* Prevents scrolling */
+    position: relative;
 }
 
+/* Full-screen video element */
+body video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Places the video behind other elements */
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video covers the full screen */
+}
+
+/* Optional: Add a gradient overlay if desired */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for overlay */
+    z-index: -1; /* Places it behind the content but over the video */
+}
+
+/* Container styling */
 .container {
     max-width: 600px;
     margin: auto;
-    padding: 20px;
-    background-color: #ffe4b5;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: rgba(30, 31, 38, 0.85); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(138, 43, 226, 0.3); /* Purple glow */
+    backdrop-filter: blur(10px); /* Blurs background behind container */
+    border: 1px solid #5a5d73;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.2em;
+    color: #e6e6ff;
+    text-shadow: 0 0 5px #a8a8ff, 0 0 15px #a8a8ff;
 }
 
 form {
@@ -18,25 +58,34 @@ form {
 }
 
 input[type="text"] {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: calc(100% - 22px);
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #665a83;
+    border-radius: 8px;
+    width: calc(100% - 28px);
+    background-color: #282a36;
+    color: #e6e6ff;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1em;
-    color: #fff;
-    background-color: #333;
+    color: #ffffff;
+    background-color: #3e1d74;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(80, 50, 120, 0.5), 0 0 10px rgba(138, 43, 226, 0.3);
+}
+
+button:hover {
+    background-color: #542e91;
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #333;
+    margin-top: 30px;
+    font-size: 1.3em;
+    color: #b0a4ff;
+    text-shadow: 0 0 5px #b0a4ff, 0 0 15px #b0a4ff;
 }
